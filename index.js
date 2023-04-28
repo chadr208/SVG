@@ -7,22 +7,22 @@ const { Shape, Circle, Square, Triangle } = require("./lib/shapes.js");
 const questions = [
     {
         type: 'input',
-        message: '',
+        message: 'Input 3 characters Max',
         name: 'text'
     },
     {
         type: 'input',
-        message: '',
+        message: 'Input text color',
         name: 'textColor',
     },
     {
         type: 'list',
-        message: '',
+        message: 'What shape would you like to use?',
         name: 'shape',
     },
     {
         type: 'input',
-        message: '',
+        message: 'What shape color would you like to use?',
         name: 'color',
     },
 ];

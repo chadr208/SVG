@@ -1,7 +1,7 @@
 // Dependencies
 const fs = require("fs");
 const inquirer = require('inquirer');
-const { Shape, Circle, Square, Triangle } = require("./lib/shapes.js");
+const { Shape, Square, Triangle, Circle } = require("./lib/shapes.js");
 
 // Shape characteristics
 const questions = [
@@ -53,14 +53,14 @@ function init() {
             // Chooses user selected shape
             let newShape;
             switch (shape) {
-                case "Circle":
-                    newShape = new Circle(text, textColor, color);
-                    break;
                 case "Square":
                     newShape = new Square(text, textColor, color);
                     break;
                 case "Triangle":
                     newShape = new Triangle(text, textColor, color);
+                    break;
+                case "Circle":
+                    newShape = new Circle(text, textColor, color);
                     break;
                 default:
                     newShape = new Circle(text, textColor, color);
